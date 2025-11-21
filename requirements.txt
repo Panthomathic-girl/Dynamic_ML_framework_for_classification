@@ -1,0 +1,13 @@
+# pip install fastapi uvicorn pandas python-
+# pip install scikit-learn joblib pandas numpy
+# pip install xgboost lightgbm catboost
+
+fastapi
+uvicorn
+pandas
+python-multipart
+pydantic
+scikit-learn
+joblib 
+pandas 
+numpy

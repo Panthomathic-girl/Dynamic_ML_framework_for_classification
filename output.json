@@ -1,0 +1,128 @@
+{
+    "best_model": "CatBoost",
+    "best_cv_f1_macro": 1.0,
+    "cv_mean_f1_macro": 1.0,
+    "cv_std_f1_macro": 0.0,
+    "total_models_tested": 7,
+    "all_results": [
+        {
+            "model": "Logistic Regression",
+            "cv_f1_macro": 0.7222,
+            "best_params": {
+                "": "93.86527090157502",
+                "lass_weight": "balanced",
+                "enalty": "l2",
+                "olver": "saga"
+            }
+        },
+        {
+            "model": "Random Forest",
+            "cv_f1_macro": 0.9206,
+            "best_params": {
+                "lass_weight": "None",
+                "ax_depth": "10",
+                "in_samples_split": "4",
+                "_estimators": "314"
+            }
+        },
+        {
+            "model": "XGBoost",
+            "cv_f1_macro": 0.525,
+            "best_params": {
+                "earning_rate": "0.12236203565420874",
+                "ax_depth": "7",
+                "_estimators": "370",
+                "ubsample": "0.892797576724562"
+            }
+        },
+        {
+            "model": "CatBoost",
+            "cv_f1_macro": 1.0,
+            "best_params": {
+                "epth": "8",
+                "terations": "260",
+                "2_leaf_reg": "6",
+                "earning_rate": "0.012119891565915222"
+            }
+        },
+        {
+            "model": "SVM",
+            "cv_f1_macro": 0.5437,
+            "best_params": {
+                "": "2.1584494295802448",
+                "lass_weight": "balanced",
+                "ernel": "rbf"
+            }
+        },
+        {
+            "model": "KNN",
+            "cv_f1_macro": 0.5734,
+            "best_params": {
+                "_neighbors": "5",
+                "": "1",
+                "eights": "uniform"
+            }
+        },
+        {
+            "model": "Naive Bayes",
+            "cv_f1_macro": 0.6329,
+            "best_params": {
+                "ar_smoothing": "5.611516415334508e-10"
+            }
+        }
+    ],
+    "model_file": "saved_models/best_model_catboost_20251119_102914.pkl",
+    "test_performance": {
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "precision_weighted": 1.0,
+        "recall_weighted": 1.0,
+        "f1_weighted": 1.0,
+        "roc_auc": 1.0,
+        "confusion_matrix": [
+            [
+                9,
+                0
+            ],
+            [
+                0,
+                6
+            ]
+        ],
+        "classification_report": {
+            "0": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1_score": 1.0,
+                "support": 9
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1_score": 1.0,
+                "support": 6
+            },
+            "accuracy": 1.0,
+            "macro avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1_score": 1.0,
+                "support": 15
+            },
+            "weighted avg": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1_score": 1.0,
+                "support": 15
+            }
+        },
+        "evaluated": true,
+        "evaluation_mode": "best_model_full_dataset",
+        "data_size": 15,
+        "note": "Only best model saved and fully evaluated"
+    },
+    "timestamp": "2025-11-19T10:29:14.385909",
+    "message": "AutoML Success — Best model trained with full preprocessing pipeline"
+}
